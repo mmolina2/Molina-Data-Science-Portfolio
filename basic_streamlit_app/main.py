@@ -6,7 +6,7 @@ st.write(
     "This app loads a Spotify dataset from a CSV file and allows users to explore it "
     "using interactive filters."
 )
-df = pd.read_csv("basic_streamlit_app/data/spotify.csv")
+df = pd.read_csv("basic_streamlit_app/data/dataset.csv.zip")
 
 st.subheader("Dataset Preview")
 st.dataframe(df)
