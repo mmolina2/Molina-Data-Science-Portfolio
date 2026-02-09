@@ -1,24 +1,25 @@
 # Molina – Data Science Portfolio
 
 ## Overview
-This repository serves as my data science portfolio for the Introduction to Data Science course.
-It documents my progress throughout the course, following the data science pipeline from data cleaning and exploratory analysis to more advanced techniques later in the semester.
+This repository serves as my **semester-long data science portfolio** for the *Introduction to Data Science* course. It documents my progress throughout the semester, following the data science pipeline from data cleaning and exploratory data analysis to visualization, modeling, and interactive applications.
 
-Each project emphasizes not only technical methods, but also how data can be used to answer questions and support decisions.
+Each project emphasizes not only technical methods, but also how data can be used to answer real-world questions and support informed decision-making.
 
 ## Purpose
-The purpose of this repository is to organize and showcase my data science work as it develops over time.
-Projects emphasize working with real datasets, preparing data for analysis, and communicating insights clearly using Python and Jupyter notebooks.
+The purpose of this repository is to organize and showcase my data science work as it develops over time. Projects emphasize working with real datasets, preparing data for analysis, and communicating insights clearly through code, visualizations, and interactive tools.
 
-## Repository Structure
-Data-Cleaning/
-- Notebooks focused on cleaning, transforming, and preparing datasets for analysis
+This portfolio will be updated regularly as new topics are introduced throughout the course.
 
-EDA/
-- Exploratory data analysis notebooks used to understand datasets and identify patterns
+## Projects
 
-Notebooks/
-- General practice notebooks and early-stage coursework
+### Basic Streamlit App
+The `basic_streamlit_app/` folder contains a Streamlit application for interactive data exploration.  
+The app uses a **Spotify dataset** sourced from Kaggle and allows users to filter and explore music data using dropdown menus and sliders.
+
+This project demonstrates:
+- Loading and exploring data from a CSV file
+- Interactive filtering of numeric and categorical variables
+- Clear presentation of data using Streamlit
 
 📌 As the course progresses, additional folders may be added to reflect new topics such as visualization, modeling, and applications.
 
