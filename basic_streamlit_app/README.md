@@ -13,10 +13,9 @@ This Streamlit app provides an interactive way to explore a Spotify tracks datas
 - Display a single filtered results table
 - View the most frequent artists in the filtered dataset
 
-## How to run
+## How to Run the App
 
-From the repository root:s
+From the root of the repository, run:
 
 ```bash
-pip install streamlit pandas
 streamlit run basic_streamlit_app/main.py
