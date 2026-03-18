@@ -12,8 +12,8 @@ Projects emphasize working with real datasets, preparing data for analysis, and 
 
 ## Current Projects
 
-### Streamlit Data App
-An interactive Streamlit application that allows users to explore and filter a dataset. Users can view the data and apply filters to analyze different aspects dynamically. This project demonstrates my ability to build simple data apps and work with user-driven data exploration.
+### Streamlit Data App (Spotify Tracks Explorer)
+An interactive Streamlit application that allows users to explore and filter a Spotify tracks dataset. Users can filter songs by genre, popularity, tempo, and search for specific artists or tracks, as well as sort and analyze the data dynamically. This project demonstrates my ability to build simple, yet interactive data applications, implement user-driven filtering, and work with real-world music data using Python and Streamlit.
 
 ### Tidy Data Project
 A data cleaning project focused on transforming an untidy Olympic medal dataset into tidy format using pandas. I used techniques such as 'melt()', 'dropna()', and string operations to restructure the data, followed by creating a pivot table and visualizations to analyze medal distributions and top sports by number of medals.
