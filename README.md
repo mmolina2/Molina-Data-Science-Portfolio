@@ -10,6 +10,14 @@ Each project emphasizes not only technical methods, but also how data can be use
 The purpose of this repository is to organize and showcase my data science work as it develops over time.
 Projects emphasize working with real datasets, preparing data for analysis, and communicating insights clearly using Python and Jupyter notebooks.
 
+## Current Projects
+
+### Streamlit Data App
+An interactive Streamlit application that allows users to explore and filter a dataset. Users can view the data and apply filters to analyze different aspects dynamically. This project demonstrates my ability to build simple data apps and work with user-driven data exploration.
+
+### Tidy Data Project
+A data cleaning project focused on transforming an untidy Olympic medal dataset into tidy format using pandas. I used techniques such as 'melt()', 'dropna()', and string operations to restructure the data, followed by creating a pivot table and visualizations to analyze medal distributions and top sports by number of medals.
+
 ## Repository Structure
 Data-Cleaning/
 - Notebooks focused on cleaning, transforming, and preparing datasets for analysis
