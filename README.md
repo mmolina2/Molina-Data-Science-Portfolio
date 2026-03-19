@@ -19,12 +19,18 @@ An interactive Streamlit application that allows users to explore and filter a S
 
 This project demonstrates my ability to build simple, interactive data applications, implement user-driven filtering, and work with real-world music data using Python, pandas, and Streamlit.
 
+<img width="500" height="260" alt="Screenshot 2026-03-19 at 4 31 00 PM" src="https://github.com/user-attachments/assets/4f617853-7610-4136-ae5a-9d5da111bd33" />
+
+
 ### Tidy Data Project
 [View Project](./tidy_data_project)
 
 This project focuses on transforming an untidy Olympic medal dataset into a clean, structured (tidy) format using Python and pandas. The goal was to prepare the data for analysis by organizing variables into clear columns, making it easier to explore patterns and relationships. Through this project, I practiced key data cleaning techniques such as reshaping data, handling missing values, separating combined variables, and creating visualizations from the cleaned dataset. After cleaning the data, I used a pivot table and multiple charts to analyze medal distributions and identify which sports appeared most frequently.
 
 This project complements my portfolio by demonstrating foundational data science skills, including data wrangling, exploratory data analysis, and data visualization. It builds on my ability to work with real-world datasets and prepares me for more advanced analysis and modeling later on.
+
+<img width="450" height="300" alt="Screenshot 2026-03-19 at 4 35 43 PM" src="https://github.com/user-attachments/assets/ded4ec87-4d4d-4349-89f8-74ce749c07b1" />
+
 
 ## Repository Structure
 
