@@ -8,7 +8,7 @@ Each project emphasizes not only technical methods, but also how data can be use
 ## Purpose
 The purpose of this repository is to organize and showcase my data science work as it develops over time. Projects emphasize working with real datasets, preparing data for analysis, and communicating insights clearly through code, visualizations, and interactive tools.
 
-This portfolio will be updated regularly as new topics are introduced throughout the course.
+📌 This portfolio will be updated regularly as new topics are introduced throughout the course.
 
 ## Current Projects
 
