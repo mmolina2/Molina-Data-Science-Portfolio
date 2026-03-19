@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 from pathlib import Path
 
-# ---------------- Page setup ----------------
+# Page setup
 st.set_page_config(page_title="Spotify Tracks Explorer", layout="wide")
 
 st.title("Spotify Tracks Explorer")
@@ -11,7 +11,7 @@ st.write(
     "sort, and explore tracks interactively."
 )
 
-# ---------------- Load data ----------------
+# Load data
 DATA_PATH = Path(__file__).parent / "data" / "dataset.csv"
 
 @st.cache_data
@@ -27,12 +27,12 @@ except pd.errors.EmptyDataError:
     st.error("The dataset file is empty or not a valid CSV.")
     st.stop()
 
-# ---------------- Dataset preview ----------------
+# Dataset preview
 st.subheader("Dataset Preview")
 st.write(f"Rows: {len(df):,} | Columns: {df.shape[1]}")
 st.dataframe(df.head(50), use_container_width=True)
 
-# ---------------- Sidebar filters ----------------
+# Sidebar filters
 st.sidebar.header("Filters")
 filtered_df = df.copy()
 
@@ -86,12 +86,12 @@ top_n_rows = st.sidebar.number_input(
     step=10
 )
 
-# ---------------- Display results (ONLY ONE table) ----------------
+# Display results 
 st.subheader("Filtered Results")
 st.write(f"Filtered rows: {len(filtered_df):,}")
 st.dataframe(filtered_df.head(int(top_n_rows)), use_container_width=True)
 
-# ---------------- Top Artists chart ----------------
+# Top Artists chart 
 st.subheader("Top Artists (in filtered data)")
 st.caption("Y-axis = number of tracks by each artist in the filtered results.")
 
