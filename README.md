@@ -34,13 +34,13 @@ This project complements my portfolio by demonstrating foundational data science
 
 ## Repository Structure
 
-### `basic_streamlit_app/`
+`basic_streamlit_app/`
 Contains the Spotify Tracks Explorer Streamlit application and related project files.
 
-### `tidy_data_project/`
+`tidy_data_project/`
 Contains the Tidy Data Project notebook and related project files.
 
-### `class_work/`
+`class_work/`
 Contains weekly notebooks, in-class exercises, and coursework completed throughout the semester.
 
 ## Skills Demonstrated
