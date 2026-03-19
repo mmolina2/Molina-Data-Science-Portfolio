@@ -32,7 +32,7 @@ st.subheader("Dataset Preview")
 st.write(f"Rows: {len(df):,} | Columns: {df.shape[1]}")
 st.dataframe(df.head(50), use_container_width=True)
 
-# Sidebar filters
+# Sidebar filters 
 st.sidebar.header("Filters")
 filtered_df = df.copy()
 
