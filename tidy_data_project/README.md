@@ -46,9 +46,16 @@ This structure makes the dataset difficult to analyze, so it must be reshaped.
 - Used 'pd.pivot_table()' to summarize medal counts by sport and medal type  
 
 ### 4. Visualizations
-- Bar chart showing top sports by number of medals  
-- Bar chart showing distribution of medal types  
+- Bar chart showing top sports by number of medals
+<img width="300" height="200" alt="Screenshot 2026-03-19 at 4 03 35 PM" src="https://github.com/user-attachments/assets/c1694540-b71c-4b77-af60-f1051a267ab9" />
 
+- Bar chart showing distribution of medal types  
+<img width="350" height="200" alt="Screenshot 2026-03-19 at 4 04 44 PM" src="https://github.com/user-attachments/assets/cd0b37f8-63d6-4f3f-a5d3-c0cb8c65be6b" />
+
+- Pie chart showing the proportion of medal types (gold, silver, bronze)
+<img width="250" height="260" alt="Screenshot 2026-03-19 at 4 12 29 PM" src="https://github.com/user-attachments/assets/ff70cea7-fb68-4266-a862-c95a0ea1bc02" />
+
+  
 ## How to Run This Project
 
 1. Clone this repository:
@@ -65,5 +72,5 @@ tidy_data_project.ipynb
 5. Run all cells to reproduce the analysis and visualizations
 
 ## References
-- Pandas Cheat Sheet  
-- Tidy Data by Hadley Wickham
+- Pandas Cheat Sheet: https://pandas.pydata.org/Pandas_Cheat_Sheet.pdf
+- Tidy Data by Hadley Wickham: https://vita.had.co.nz/papers/tidy-data.pdf
