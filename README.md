@@ -12,6 +12,20 @@ The purpose of this repository is to organize and showcase my data science work 
 
 ## Current Projects
 
+### Machine Learning Explorer App
+[View Project](./MLStreamlitApp)
+
+An interactive Streamlit application that allows users to explore machine learning workflows using their own datasets. Users can upload a CSV file, select a target variable, choose a classification model, adjust hyperparameters, and evaluate model performance in real time.
+
+The app currently supports Logistic Regression and Decision Tree Classification. It includes preprocessing steps such as handling missing values, encoding categorical variables, and removing identifier-like columns. Users can view evaluation metrics including accuracy, precision, recall, and F1 score, along with a confusion matrix for deeper insight into model predictions.
+
+A key feature of this app is dynamic performance feedback, which categorizes model results as high, moderate, or low performance based on accuracy thresholds. This helps users better understand model effectiveness and potential limitations.
+
+This project demonstrates my ability to build interactive machine learning tools, apply preprocessing techniques, tune models, and communicate results clearly through both metrics and visualizations.
+
+<img width="500" height="250" alt="Screenshot 2026-04-14 at 11 58 32 PM" src="https://github.com/user-attachments/assets/5872ecc0-7343-449c-bd94-20265baa85f6" />
+
+
 ### Streamlit Data App (Spotify Tracks Explorer)
 [View Project](./basic_streamlit_app)
 
@@ -23,7 +37,7 @@ This project demonstrates my ability to build simple, interactive data applicati
 
 
 ### Tidy Data Project
-[View Project](./tidy_data_project)
+[View Project](./TidyData-Project)
 
 This project focuses on transforming an untidy Olympic medal dataset into a clean, structured (tidy) format using Python and pandas. The goal was to prepare the data for analysis by organizing variables into clear columns, making it easier to explore patterns and relationships. Through this project, I practiced key data cleaning techniques such as reshaping data, handling missing values, separating combined variables, and creating visualizations from the cleaned dataset. After cleaning the data, I used a pivot table and multiple charts to analyze medal distributions and identify which sports appeared most frequently.
 
