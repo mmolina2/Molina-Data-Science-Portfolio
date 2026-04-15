@@ -27,7 +27,8 @@ The application includes the following functions:
 * Train and evaluate models
 * View performance metrics and visualizations
 
-![Model Settings](<img width="1279" height="673" alt="Screenshot 2026-04-14 at 11 43 08 PM" src="https://github.com/user-attachments/assets/f2c53391-88cd-43c4-b8df-892dd3bd2bae" />)
+<img width="500" height="250" alt="Screenshot 2026-04-14 at 11 50 05 PM" src="https://github.com/user-attachments/assets/aea3fd3e-0097-4139-ab6f-ab1404ac5a90" />
+
 ---
 
 ## Model Workflow
@@ -76,7 +77,7 @@ The model is evaluated using:
 * Confusion Matrix
 * ROC Curve (for binary classification)
 
-![Model Performance Metrics](<img width="1352" height="135" alt="Screenshot 2026-04-14 at 11 45 06 PM" src="https://github.com/user-attachments/assets/361676c3-6f71-4ae1-8409-b291c45f74de" />)
+<img width="800" height="100" alt="Screenshot 2026-04-14 at 11 50 31 PM" src="https://github.com/user-attachments/assets/7ee5470e-3db2-40a3-a401-e627289c699f" />
 
 ## Performance Interpretation
 
@@ -86,7 +87,7 @@ To help interpret results, the app provides a performance guide:
 * **Moderate performance:** Accuracy between 0.60 and 0.79
 * **Low performance:** Accuracy < 0.60
 
-![Performance Feedback Example](<img width="682" height="101" alt="Screenshot 2026-04-14 at 11 47 50 PM" src="https://github.com/user-attachments/assets/1928dbe7-4374-4356-a14d-bd3eb72308d6" />)
+<img width="500" height="100" alt="Screenshot 2026-04-14 at 11 50 48 PM" src="https://github.com/user-attachments/assets/25a253be-5189-4f24-89e6-44c6a72d67cf" />
 
 The app also provides dynamic feedback explaining model performance based on these ranges.
 
@@ -109,8 +110,7 @@ The app also provides dynamic feedback explaining model performance based on the
 ---
 
 ## Example Output
-![Confusion Matrix](<img width="1392" height="716" alt="Screenshot 2026-04-14 at 11 46 55 PM" src="https://github.com/user-attachments/assets/3dcc4988-5b70-4e27-846f-507f7d899bf3" />
-)
+<img width="1000" height="500" alt="Screenshot 2026-04-14 at 11 51 07 PM" src="https://github.com/user-attachments/assets/f087780b-d349-4f1a-a3df-f80f8b5494af" />
 
 ### App Interface
 
