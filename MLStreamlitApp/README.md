@@ -10,7 +10,7 @@ The goal of this project is to create a flexible tool that can work with differe
 
 ## App Features
 
-The application includes the following functionality:
+The application includes the following functions:
 
 * Upload a CSV dataset
 * Select any column as the target variable
@@ -26,6 +26,8 @@ The application includes the following functionality:
 * Adjust hyperparameters interactively
 * Train and evaluate models
 * View performance metrics and visualizations
+
+<img width="500" height="250" alt="Screenshot 2026-04-14 at 11 50 05 PM" src="https://github.com/user-attachments/assets/aea3fd3e-0097-4139-ab6f-ab1404ac5a90" />
 
 ---
 
@@ -73,17 +75,8 @@ The model is evaluated using:
 * Recall
 * F1 Score
 * Confusion Matrix
-* ROC Curve (for binary classification)
 
----
-
-## Visualizations
-
-* Bar chart showing target class distribution
-* Confusion matrix showing prediction performance
-* ROC curve for binary classification problems
-
----
+<img width="800" height="100" alt="Screenshot 2026-04-14 at 11 50 31 PM" src="https://github.com/user-attachments/assets/7ee5470e-3db2-40a3-a401-e627289c699f" />
 
 ## Performance Interpretation
 
@@ -92,6 +85,8 @@ To help interpret results, the app provides a performance guide:
 * **High performance:** Accuracy ≥ 0.80
 * **Moderate performance:** Accuracy between 0.60 and 0.79
 * **Low performance:** Accuracy < 0.60
+
+<img width="500" height="100" alt="Screenshot 2026-04-14 at 11 50 48 PM" src="https://github.com/user-attachments/assets/25a253be-5189-4f24-89e6-44c6a72d67cf" />
 
 The app also provides dynamic feedback explaining model performance based on these ranges.
 
@@ -114,6 +109,7 @@ The app also provides dynamic feedback explaining model performance based on the
 ---
 
 ## Example Output
+<img width="1000" height="500" alt="Screenshot 2026-04-14 at 11 51 07 PM" src="https://github.com/user-attachments/assets/f087780b-d349-4f1a-a3df-f80f8b5494af" />
 
 ### App Interface
 
@@ -144,3 +140,5 @@ The app also provides dynamic feedback explaining model performance based on the
 * Scikit-learn Documentation: https://scikit-learn.org/
 * Streamlit Documentation: https://docs.streamlit.io/
 * Course materials and lectures
+* Tutorial: https://www.youtube.com/watch?v=eoH2NviL8cs
+  
