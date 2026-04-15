@@ -10,7 +10,7 @@ The goal of this project is to create a flexible tool that can work with differe
 
 ## App Features
 
-The application includes the following functionality:
+The application includes the following functions:
 
 * Upload a CSV dataset
 * Select any column as the target variable
@@ -27,6 +27,7 @@ The application includes the following functionality:
 * Train and evaluate models
 * View performance metrics and visualizations
 
+![Model Settings](<img width="1279" height="673" alt="Screenshot 2026-04-14 at 11 43 08 PM" src="https://github.com/user-attachments/assets/f2c53391-88cd-43c4-b8df-892dd3bd2bae" />)
 ---
 
 ## Model Workflow
@@ -75,15 +76,7 @@ The model is evaluated using:
 * Confusion Matrix
 * ROC Curve (for binary classification)
 
----
-
-## Visualizations
-
-* Bar chart showing target class distribution
-* Confusion matrix showing prediction performance
-* ROC curve for binary classification problems
-
----
+![Model Performance Metrics](<img width="1352" height="135" alt="Screenshot 2026-04-14 at 11 45 06 PM" src="https://github.com/user-attachments/assets/361676c3-6f71-4ae1-8409-b291c45f74de" />)
 
 ## Performance Interpretation
 
@@ -92,6 +85,8 @@ To help interpret results, the app provides a performance guide:
 * **High performance:** Accuracy ≥ 0.80
 * **Moderate performance:** Accuracy between 0.60 and 0.79
 * **Low performance:** Accuracy < 0.60
+
+![Performance Feedback Example](<img width="682" height="101" alt="Screenshot 2026-04-14 at 11 47 50 PM" src="https://github.com/user-attachments/assets/1928dbe7-4374-4356-a14d-bd3eb72308d6" />)
 
 The app also provides dynamic feedback explaining model performance based on these ranges.
 
@@ -114,6 +109,8 @@ The app also provides dynamic feedback explaining model performance based on the
 ---
 
 ## Example Output
+![Confusion Matrix](<img width="1392" height="716" alt="Screenshot 2026-04-14 at 11 46 55 PM" src="https://github.com/user-attachments/assets/3dcc4988-5b70-4e27-846f-507f7d899bf3" />
+)
 
 ### App Interface
 
