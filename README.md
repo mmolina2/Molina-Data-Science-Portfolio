@@ -47,11 +47,13 @@ This project complements my portfolio by demonstrating foundational data science
 
 
 ## Repository Structure
+`MLStreamlitApp/`
+Contains the Machine Learning Explorer Streamlit application, including model training, evaluation, and user-interactive features.
 
-`basic_streamlit_app/`
+`Streamlitapp-Project/`
 Contains the Spotify Tracks Explorer Streamlit application and related project files.
 
-`tidy_data_project/`
+`TidyData-Project/`
 Contains the Tidy Data Project notebook and related project files.
 
 `class_work/`
