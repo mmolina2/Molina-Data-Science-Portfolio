@@ -140,3 +140,5 @@ The app also provides dynamic feedback explaining model performance based on the
 * Scikit-learn Documentation: https://scikit-learn.org/
 * Streamlit Documentation: https://docs.streamlit.io/
 * Course materials and lectures
+* Tutorial: https://www.youtube.com/watch?v=eoH2NviL8cs
+  
