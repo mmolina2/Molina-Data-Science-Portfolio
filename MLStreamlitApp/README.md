@@ -75,7 +75,6 @@ The model is evaluated using:
 * Recall
 * F1 Score
 * Confusion Matrix
-* ROC Curve (for binary classification)
 
 <img width="800" height="100" alt="Screenshot 2026-04-14 at 11 50 31 PM" src="https://github.com/user-attachments/assets/7ee5470e-3db2-40a3-a401-e627289c699f" />
 
