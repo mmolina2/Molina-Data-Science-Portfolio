@@ -2,82 +2,114 @@ import streamlit as st
 import pandas as pd
 from pathlib import Path
 
-# Page setup
+# Page title and short intro
 st.set_page_config(page_title="Spotify Tracks Explorer", layout="wide")
 
 st.title("Spotify Tracks Explorer")
 st.write(
-    "This app loads a Spotify tracks dataset from a CSV file and lets you filter, "
-    "sort, and explore tracks interactively."
+    "This app lets the user explore a Spotify tracks dataset by filtering, sorting, "
+    "and searching for songs or artists."
 )
 
-# Load data
+# Load the dataset
 DATA_PATH = Path(__file__).parent / "data" / "dataset.csv"
 
+
 @st.cache_data
-def load_data(path: Path) -> pd.DataFrame:
-    return pd.read_csv(path)
+def load_data():
+    return pd.read_csv(DATA_PATH)
+
 
 try:
-    df = load_data(DATA_PATH)
+    df = load_data()
 except FileNotFoundError:
-    st.error(f"Could not find dataset at: {DATA_PATH}")
+    st.error(f"Could not find the dataset file at: {DATA_PATH}")
     st.stop()
 except pd.errors.EmptyDataError:
     st.error("The dataset file is empty or not a valid CSV.")
     st.stop()
 
-# Dataset preview
+# Show a quick preview
 st.subheader("Dataset Preview")
 st.write(f"Rows: {len(df):,} | Columns: {df.shape[1]}")
 st.dataframe(df.head(50), use_container_width=True)
 
-# Sidebar filters 
-st.sidebar.header("Filters")
+# Make a copy so the original dataframe stays unchanged
 filtered_df = df.copy()
 
-# Genre filter
+# Create the sidebar filters
+st.sidebar.header("Filters")
+
+# Filter by genre
 if "track_genre" in filtered_df.columns:
-    genres = sorted(filtered_df["track_genre"].dropna().unique())
+    genre_list = sorted(filtered_df["track_genre"].dropna().unique())
+
     selected_genres = st.sidebar.multiselect(
         "Select genre(s)",
-        options=genres,
-        default=genres[:5] if len(genres) >= 5 else genres
+        options=genre_list,
+        default=genre_list[:5] if len(genre_list) >= 5 else genre_list
     )
+
     if selected_genres:
         filtered_df = filtered_df[filtered_df["track_genre"].isin(selected_genres)]
 
-# Popularity filter
+# Filter by popularity
 if "popularity" in filtered_df.columns:
-    pop_min = int(filtered_df["popularity"].min())
-    pop_max = int(filtered_df["popularity"].max())
-    pop_range = st.sidebar.slider("Popularity", pop_min, pop_max, (pop_min, pop_max))
-    filtered_df = filtered_df[filtered_df["popularity"].between(pop_range[0], pop_range[1])]
+    min_popularity = int(filtered_df["popularity"].min())
+    max_popularity = int(filtered_df["popularity"].max())
 
-# Tempo filter
-if "tempo" in filtered_df.columns:
-    tempo_min = float(filtered_df["tempo"].min())
-    tempo_max = float(filtered_df["tempo"].max())
-    tempo_range = st.sidebar.slider("Tempo (BPM)", tempo_min, tempo_max, (tempo_min, tempo_max))
-    filtered_df = filtered_df[filtered_df["tempo"].between(tempo_range[0], tempo_range[1])]
+    popularity_range = st.sidebar.slider(
+        "Popularity",
+        min_popularity,
+        max_popularity,
+        (min_popularity, max_popularity)
+    )
 
-# Search filter
-query = st.sidebar.text_input("Search track/artist")
-if query and "track_name" in filtered_df.columns and "artists" in filtered_df.columns:
-    q = query.lower()
     filtered_df = filtered_df[
-        filtered_df["track_name"].astype(str).str.lower().str.contains(q, na=False)
-        | filtered_df["artists"].astype(str).str.lower().str.contains(q, na=False)
+        filtered_df["popularity"].between(popularity_range[0], popularity_range[1])
     ]
 
-# Sort controls
-sort_by = st.sidebar.radio("Sort by", ["popularity", "tempo", "danceability"], index=0)
-descending = st.sidebar.checkbox("Sort descending", value=True)
+# Filter by tempo
+if "tempo" in filtered_df.columns:
+    min_tempo = float(filtered_df["tempo"].min())
+    max_tempo = float(filtered_df["tempo"].max())
 
-if sort_by in filtered_df.columns:
-    filtered_df = filtered_df.sort_values(by=sort_by, ascending=not descending)
+    tempo_range = st.sidebar.slider(
+        "Tempo (BPM)",
+        min_tempo,
+        max_tempo,
+        (min_tempo, max_tempo)
+    )
 
-# Show top N rows (controls the ONE table)
+    filtered_df = filtered_df[
+        filtered_df["tempo"].between(tempo_range[0], tempo_range[1])
+    ]
+
+# Search by track name or artist
+search_text = st.sidebar.text_input("Search track/artist")
+
+if search_text and "track_name" in filtered_df.columns and "artists" in filtered_df.columns:
+    search_text = search_text.lower()
+
+    filtered_df = filtered_df[
+        filtered_df["track_name"].astype(str).str.lower().str.contains(search_text, na=False)
+        | filtered_df["artists"].astype(str).str.lower().str.contains(search_text, na=False)
+    ]
+
+# Choose sort options
+sort_options = ["popularity", "tempo", "danceability"]
+available_sort_options = [col for col in sort_options if col in filtered_df.columns]
+
+if available_sort_options:
+    sort_by = st.sidebar.radio("Sort by", available_sort_options, index=0)
+    sort_descending = st.sidebar.checkbox("Sort descending", value=True)
+
+    filtered_df = filtered_df.sort_values(
+        by=sort_by,
+        ascending=not sort_descending
+    )
+
+# Control how many rows appear in the results table
 top_n_rows = st.sidebar.number_input(
     "Show top N rows",
     min_value=10,
@@ -86,18 +118,37 @@ top_n_rows = st.sidebar.number_input(
     step=10
 )
 
-# Display results 
+# Show the filtered results
 st.subheader("Filtered Results")
 st.write(f"Filtered rows: {len(filtered_df):,}")
+
+# Small summary to make the app more informative
+summary_col1, summary_col2, summary_col3 = st.columns(3)
+
+summary_col1.metric("Tracks Shown", min(len(filtered_df), int(top_n_rows)))
+summary_col2.metric("Total Filtered Tracks", len(filtered_df))
+
+if "track_genre" in filtered_df.columns:
+    summary_col3.metric("Genres in Results", filtered_df["track_genre"].nunique())
+else:
+    summary_col3.metric("Genres in Results", 0)
+
 st.dataframe(filtered_df.head(int(top_n_rows)), use_container_width=True)
 
-# Top Artists chart 
-st.subheader("Top Artists (in filtered data)")
-st.caption("Y-axis = number of tracks by each artist in the filtered results.")
+# Top artists chart
+st.subheader("Top Artists in Filtered Results")
+st.caption("This chart shows which artists appear most often after the filters are applied.")
 
-if "artists" in filtered_df.columns:
+if "artists" in filtered_df.columns and len(filtered_df) > 0:
     top_n_artists = st.slider("Top N artists", 5, 30, 10)
-    top_artists = filtered_df["artists"].astype(str).value_counts().head(top_n_artists)
+
+    top_artists = (
+        filtered_df["artists"]
+        .astype(str)
+        .value_counts()
+        .head(top_n_artists)
+    )
+
     st.bar_chart(top_artists)
 else:
-    st.info("No 'artists' column found in this dataset.")
+    st.info("No artist data is available for the current filtered results.")
