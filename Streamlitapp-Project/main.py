@@ -152,4 +152,7 @@ if "artists" in filtered_df.columns and len(filtered_df) > 0:
     st.bar_chart(top_artists)
 else:
     st.info("No artist data is available for the current filtered results.")
+<<<<<<< HEAD
     
+=======
+>>>>>>> dedff90f161e20ef0ca5ed8de95ad34c0880b769
