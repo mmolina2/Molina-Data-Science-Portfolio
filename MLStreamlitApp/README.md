@@ -100,8 +100,7 @@ The app also provides dynamic feedback explaining model performance based on the
 2. Navigate to the project folder:
    MLStreamlitApp
 
-3. Install required libraries:
- 
+3. Install required libraries
 
 4. Run the app:
    streamlit run app.py
