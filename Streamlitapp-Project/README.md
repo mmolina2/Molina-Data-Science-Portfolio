@@ -20,28 +20,22 @@ This project is a simple Streamlit app that allows users to explore a Spotify tr
 git clone https://github.com/mmolina2/Molina-Data-Science-Portfolio
 2. Navigate to the project folder:
 cd Streamlitapp-Project
-3. Install the required libraries
-streamlit
-pandas
+3. Install the required libraries:
+streamlit, pandas
 4. Run the app:
 streamlit run main.py
+
 
 ## Example Output
 
 ### App Interface
-![App Interface](images/app_interface.png)
+<img width="500" height="270" alt="Screenshot 2026-04-20 at 11 48 48 AM" src="https://github.com/user-attachments/assets/132a9974-f364-4f6f-9c3d-9daab3a9519a" />
 
-### Filters and Results
-![Filters](images/filters.png)
+### Filters
+<img width="210" height="478" alt="Screenshot 2026-04-20 at 11 54 45 AM" src="https://github.com/user-attachments/assets/98a69e58-a574-4ed8-8d34-1f6119621e72" />
 
 ### Top Artists Chart
-![Top Artists](images/top_artists.png)
-
-## Notes
-
-- The dataset is loaded from a local CSV file inside the project  
-- Filters are applied step-by-step so results update dynamically  
-- The app was built using Streamlit to practice creating interactive data tools  
+<img width="500" height="200" alt="Screenshot 2026-04-20 at 11 53 05 AM" src="https://github.com/user-attachments/assets/80633c43-fc9f-4b64-a181-2bcf8301a7e0" />
 
 ## Tools Used
 
