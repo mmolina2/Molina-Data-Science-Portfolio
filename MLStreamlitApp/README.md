@@ -101,7 +101,7 @@ The app also provides dynamic feedback explaining model performance based on the
    MLStreamlitApp
 
 3. Install required libraries:
-   pip install -r requirements.txt
+ 
 
 4. Run the app:
    streamlit run app.py
