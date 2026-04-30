@@ -5,6 +5,8 @@ This project demonstrates how to clean and transform a dataset into tidy format 
 
 The goal of this project is to restructure the dataset so that it follows tidy data principles, making it easier to analyze and visualize.
 
+---
+
 ## Tidy Data Principles
 According to tidy data principles:
 - Each variable should have its own column
@@ -12,6 +14,8 @@ According to tidy data principles:
 - Each type of observational unit should form its own table
 
 This project applies these principles to reorganize the dataset into a clean and usable format, to later create visualizations based on the information. 
+
+---
 
 ## Dataset Information
 The dataset contains Olympic medalists from 2008:
@@ -21,11 +25,15 @@ The dataset contains Olympic medalists from 2008:
 
 This structure makes the dataset difficult to analyze, so it must be reshaped.
 
+---
+
 ## Tools Used
 - Python
 - pandas
 - matplotlib
 - seaborn
+
+---
 
 ## Key Steps
 
@@ -55,7 +63,8 @@ This structure makes the dataset difficult to analyze, so it must be reshaped.
 - Pie chart showing the proportion of medal types (gold, silver, bronze)
 <img width="250" height="260" alt="Screenshot 2026-03-19 at 4 12 29 PM" src="https://github.com/user-attachments/assets/ff70cea7-fb68-4266-a862-c95a0ea1bc02" />
 
-  
+---
+
 ## How to Run This Project
 
 1. Clone this repository:
@@ -70,6 +79,8 @@ pip install pandas matplotlib seaborn
 tidy_data_project.ipynb
 
 5. Run all cells to reproduce the analysis and visualizations
+
+---
 
 ## References
 - Pandas Cheat Sheet: https://pandas.pydata.org/Pandas_Cheat_Sheet.pdf
