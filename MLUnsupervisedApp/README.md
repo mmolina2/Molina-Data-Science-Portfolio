@@ -93,6 +93,9 @@ Run the app:
 
 streamlit run app.py
 
+## Link to Deployed App
+https://molina-data-science-portfolio-kx5p9zwdtz2wrkowfkr4nd.streamlit.app/
+
 ## Example Output
 
 ### App Interface  
