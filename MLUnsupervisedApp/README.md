@@ -102,7 +102,7 @@ streamlit run app.py
 <img width="340" height="474" alt="Screenshot 2026-04-29 at 10 01 39 PM" src="https://github.com/user-attachments/assets/78f19dbe-dd4f-487b-a66e-f1c9565fd5bc" />
 
 ### Hierarchical Clustering  
-<img width="370" height="474" alt="Screenshot 2026-04-29 at 10 01 59 PM" src="https://github.com/user-attachments/assets/c6c3b018-482e-4f34-97c7-4f28913a0cf3" />
+<img width="380" height="444" alt="Screenshot 2026-04-29 at 10 01 59 PM" src="https://github.com/user-attachments/assets/c6c3b018-482e-4f34-97c7-4f28913a0cf3" />
 
 ### PCA Visualization  
 <img width="460" height="410" alt="Screenshot 2026-04-29 at 10 02 19 PM" src="https://github.com/user-attachments/assets/33d15f5c-0492-4877-85f1-f2f365a96fbb" />
