@@ -1,10 +1,14 @@
 # Unsupervised Machine Learning Explorer App
 
+---
+
 ## Overview
 
 This project demonstrates how to build an interactive unsupervised machine learning application using Python and Streamlit. The app allows users to upload their own dataset, select numeric features, and explore different unsupervised learning techniques.
 
 The goal of this project is to create a flexible tool that works with different datasets while helping users understand how clustering and dimensionality reduction behave under different settings.
+
+---
 
 ## App Features
 
@@ -22,6 +26,8 @@ The application includes the following functions:
 - Adjust model parameters interactively  
 - Visualize clustering results  
 - View performance metrics and interpretation  
+
+---
 
 ## Model Workflow
 
@@ -61,6 +67,8 @@ The app provides feedback using:
 - Explained Variance (for PCA)  
 - Scatterplots for visual interpretation  
 
+---
+
 ## Performance Interpretation
 
 To help interpret results, the app provides a simple guide:
@@ -76,6 +84,8 @@ To help interpret results, the app provides a simple guide:
 - Low (< 50%): significant information is lost  
 
 The app also provides dynamic feedback explaining what these values mean in context.
+
+---
 
 ## How to Run This Project
 
@@ -96,6 +106,8 @@ streamlit run app.py
 ## Link to Deployed App
 https://molina-data-science-portfolio-kx5p9zwdtz2wrkowfkr4nd.streamlit.app/
 
+---
+
 ## Example Output
 
 ### App Interface  
@@ -109,6 +121,8 @@ https://molina-data-science-portfolio-kx5p9zwdtz2wrkowfkr4nd.streamlit.app/
 
 ### PCA Visualization  
 <img width="460" height="410" alt="Screenshot 2026-04-29 at 10 02 19 PM" src="https://github.com/user-attachments/assets/33d15f5c-0492-4877-85f1-f2f365a96fbb" />
+
+---
 
 ## Concepts Behind the App
 
@@ -126,6 +140,8 @@ Dimensionality reduction simplifies complex datasets by reducing the number of f
 
 These concepts allow the app to help users explore datasets and discover patterns without needing labeled data.
 
+---
+
 ## Key Takeaways
 
 - Unsupervised learning does not require labeled data  
@@ -133,6 +149,8 @@ These concepts allow the app to help users explore datasets and discover pattern
 - Choosing the number of clusters can significantly impact results  
 - PCA helps reduce dimensionality while preserving important patterns  
 - Visualizations make it easier to understand patterns in high-dimensional data  
+
+---
 
 ## Tools Used
 
@@ -143,6 +161,8 @@ These concepts allow the app to help users explore datasets and discover pattern
 - Scikit-learn  
 - Matplotlib  
 - SciPy  
+
+---
 
 ## References
 
