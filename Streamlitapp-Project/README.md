@@ -2,6 +2,8 @@
 
 This project is a simple Streamlit app that allows users to explore a Spotify tracks dataset. The goal was to build an interactive tool where users can filter, sort, and search through music data.
 
+---
+
 ## Features
 
 - Load a dataset from a CSV file  
@@ -14,6 +16,8 @@ This project is a simple Streamlit app that allows users to explore a Spotify tr
 - Display filtered results in a table  
 - View a bar chart of the most frequent artists in the filtered data  
 
+---
+
 ## How to Run the App
 
 1. Clone this repository:
@@ -25,6 +29,7 @@ streamlit, pandas
 4. Run the app:
 streamlit run main.py
 
+---
 
 ## Example Output
 
@@ -37,14 +42,26 @@ streamlit run main.py
 ### Top Artists Chart
 <img width="500" height="200" alt="Screenshot 2026-04-20 at 11 53 05 AM" src="https://github.com/user-attachments/assets/80633c43-fc9f-4b64-a181-2bcf8301a7e0" />
 
+---
+
 ## Tools Used
 
 - Python  
 - Streamlit  
 - Pandas  
 
+---
+
 ## What I Learned
 
 - How to build an interactive app using Streamlit  
 - How to filter and manipulate data using pandas  
 - How to organize a project and connect it to GitHub  
+
+---
+
+## References
+
+Streamlit Documentation: https://docs.streamlit.io/  
+Pandas Documentation: https://pandas.pydata.org/docs/  
+Course materials and class examples
