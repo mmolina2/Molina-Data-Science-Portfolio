@@ -41,16 +41,12 @@ The application includes the following functions:
 * Converted categorical variables using one-hot encoding
 * Automatically removed identifier columns (e.g., IDs)
 
----
-
 ### 2. Model Selection
 
 The app allows users to choose between two supervised learning models:
 
 * Logistic Regression
 * Decision Tree Classifier
-
----
 
 ### 3. Hyperparameter Tuning
 
@@ -64,8 +60,6 @@ The app allows users to choose between two supervised learning models:
 * Adjusted tree depth (`max_depth`)
 * Controlled splitting criteria (`min_samples_split`)
 
----
-
 ### 4. Model Evaluation
 
 The model is evaluated using:
@@ -77,6 +71,8 @@ The model is evaluated using:
 * Confusion Matrix
 
 <img width="800" height="100" alt="Screenshot 2026-04-14 at 11 50 31 PM" src="https://github.com/user-attachments/assets/7ee5470e-3db2-40a3-a401-e627289c699f" />
+
+---
 
 ## Performance Interpretation
 
