@@ -148,5 +148,9 @@ These concepts allow the app to help users explore datasets and discover pattern
 
 Scikit-learn Documentation: https://scikit-learn.org/  
 Streamlit Documentation: https://docs.streamlit.io/  
+K-Means Clustering (Scikit-learn Guide): https://scikit-learn.org/stable/modules/clustering.html  
+Hierarchical Clustering (SciPy Documentation): https://docs.scipy.org/doc/scipy/reference/cluster.hierarchy.html  
+Principal Component Analysis (PCA): https://scikit-learn.org/stable/modules/decomposition.html#pca  
+YouTube Video (Unsupervised Learning Overview): https://www.youtube.com/watch?v=4b5d3muPQmA  
 Course Text:
 Grokking Machine Learning by Luis Serrano (Chapter 2: Types of Machine Learning), and other course materials and lectures  
