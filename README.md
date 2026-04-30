@@ -5,6 +5,13 @@ This repository serves as my **semester-long data science portfolio** for the *I
 
 Each project emphasizes not only technical methods, but also how data can be used to answer real-world questions and support informed decision-making.
 
+## At a Glance
+
+- **Unsupervised Machine Learning App** – Interactive clustering and PCA tool using Streamlit  
+- **Machine Learning Explorer App** – Supervised learning with model selection and evaluation  
+- **Spotify Tracks Explorer** – Interactive data filtering and visualization app  
+- **Tidy Data Project** – Data cleaning and transformation using pandas  
+
 ## Purpose
 The purpose of this repository is to organize and showcase my data science work as it develops over time. Projects emphasize working with real datasets, preparing data for analysis, and communicating insights clearly through code, visualizations, and interactive tools.
 
