@@ -5,6 +5,8 @@ This repository serves as my **semester-long data science portfolio** for the *I
 
 Each project emphasizes not only technical methods, but also how data can be used to answer real-world questions and support informed decision-making.
 
+---
+
 ## At a Glance
 
 - **Unsupervised Machine Learning App** – Interactive clustering and PCA tool using Streamlit  
@@ -12,10 +14,14 @@ Each project emphasizes not only technical methods, but also how data can be use
 - **Spotify Tracks Explorer** – Interactive data filtering and visualization app  
 - **Tidy Data Project** – Data cleaning and transformation using pandas  
 
+---
+
 ## Purpose
 The purpose of this repository is to organize and showcase my data science work as it develops over time. Projects emphasize working with real datasets, preparing data for analysis, and communicating insights clearly through code, visualizations, and interactive tools.
 
 📌 This portfolio will be updated regularly as new topics are introduced throughout the course.
+
+---
 
 ## Current Projects
 
@@ -66,6 +72,7 @@ This project complements my portfolio by demonstrating foundational data science
 
 <img width="450" height="300" alt="Screenshot 2026-03-19 at 4 35 43 PM" src="https://github.com/user-attachments/assets/ded4ec87-4d4d-4349-89f8-74ce749c07b1" />
 
+---
 
 ## Repository Structure
 `MLUnsupervisedApp/`  
@@ -83,12 +90,16 @@ Contains the Tidy Data Project notebook and related project files.
 `class_work/`
 Contains weekly notebooks, in-class exercises, and coursework completed throughout the semester.
 
+---
+
 ## Skills Demonstrated
 - Data cleaning and transformation with pandas
 - Exploratory data analysis
 - Data visualization with matplotlib, pandas plotting, and seaborn
 - Building interactive applications with Streamlit
 - Organizing projects and documentation using GitHub
+
+---
 
 ## Author
 Maria Jose Molina  
