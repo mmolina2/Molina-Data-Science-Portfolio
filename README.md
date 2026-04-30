@@ -48,7 +48,7 @@ This project demonstrates my ability to build interactive machine learning tools
 
 
 ### Streamlit Data App (Spotify Tracks Explorer)
-[View Project](./basic_streamlit_app)
+[View Project](./Streamlitapp-Project)
 
 An interactive Streamlit application that allows users to explore and filter a Spotify tracks dataset. Users can filter songs by genre, popularity, tempo (BPM), and search for specific artists or tracks, as well as sort and analyze the data dynamically.
 
