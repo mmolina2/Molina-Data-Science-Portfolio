@@ -12,6 +12,20 @@ The purpose of this repository is to organize and showcase my data science work 
 
 ## Current Projects
 
+### Unsupervised Machine Learning Explorer App  
+[View Project](./MLUnsupervisedApp)
+
+This project extends my portfolio by applying unsupervised machine learning techniques through an interactive Streamlit application. The app allows users to upload their own dataset, select numeric features, and explore clustering and dimensionality reduction methods in real time.  
+
+Users can experiment with K-Means clustering, hierarchical clustering, and principal component analysis (PCA), adjusting parameters such as the number of clusters or components to observe how results change. The app provides visual outputs including cluster scatter plots, dendrograms, and explained variance charts.  
+
+To support interpretation, the app includes performance metrics such as silhouette scores and dynamic feedback that explains the quality of clustering results (e.g., strong separation vs. overlapping clusters). This helps connect technical outputs to meaningful insights.  
+
+This project demonstrates my ability to build interactive data science tools, apply unsupervised learning techniques, tune model parameters, and communicate results clearly through visualization and user-focused design. It also builds on earlier projects by introducing model exploration without labeled data and deploying a fully functional web app.
+
+<img width="500" height="280" alt="Screenshot 2026-04-29 at 10 40 55 PM" src="https://github.com/user-attachments/assets/769ebbdb-4ec6-47d9-9899-cb61bee596f2" />
+
+
 ### Machine Learning Explorer App
 [View Project](./MLStreamlitApp)
 
@@ -47,6 +61,9 @@ This project complements my portfolio by demonstrating foundational data science
 
 
 ## Repository Structure
+`MLUnsupervisedApp/`  
+Contains the Unsupervised Machine Learning Streamlit application, including clustering, PCA, and interactive model exploration.
+
 `MLStreamlitApp/`
 Contains the Machine Learning Explorer Streamlit application, including model training, evaluation, and user-interactive features.
 
