@@ -92,6 +92,8 @@ The app also provides dynamic feedback explaining model performance based on the
 
 ---
 
+## Link to App: https://mlappapp-esqezxwrd4ekezfef4svyg.streamlit.app/
+
 ## How to Run This Project
 
 1. Clone this repository:
@@ -109,8 +111,6 @@ The app also provides dynamic feedback explaining model performance based on the
 
 ## Example Output
 <img width="1000" height="500" alt="Screenshot 2026-04-14 at 11 51 07 PM" src="https://github.com/user-attachments/assets/f087780b-d349-4f1a-a3df-f80f8b5494af" />
-
-### App Interface
 
 ---
 
